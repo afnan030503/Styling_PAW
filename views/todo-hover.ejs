@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List with Hover Effect</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for Hover Effect -->
+    <style>
+        .card-hover:hover {
+            transform: scale(1.05); /* Membesarkan card sedikit saat hover */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat hover */
+            transition: all 0.3s ease; /* Efek transisi */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Todo List Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Daftar Todo</h2>
+
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-hover">
+                    <div class="card-body">
+                        <h5 class="card-title">Tugas 1</h5>
+                        <p class="card-text">Deskripsi tugas pertama.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-hover">
+                    <div class="card-body">
+                        <h5 class="card-title">Tugas 2</h5>
+                        <p class="card-text">Deskripsi tugas kedua.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-hover">
+                    <div class="card-body">
+                        <h5 class="card-title">Tugas 3</h5>
+                        <p class="card-text">Deskripsi tugas ketiga.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
